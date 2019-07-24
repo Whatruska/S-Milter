@@ -3,4 +3,11 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss"; // Optional Bootstrap Grid
 @import "../../node_modules/bootstrap/scss/utilities/_sizing.scss"; // Optional Bootstrap Utilites
 
+@import"../libs/Font-Awesome/scss/fontawesome.scss";
+@import"../libs/Font-Awesome/scss/regular.scss";
+@import"../libs/Font-Awesome/scss/solid.scss";
+
+@import"../libs/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+
 @import "../../node_modules/normalize.css/normalize.css"; // CSS library plug-in example (npm i --save-dev normalize.css)
+@import"../libs/mmenu/dist/mmenu.css";

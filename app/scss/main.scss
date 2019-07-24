@@ -2,6 +2,14 @@
 @import 'fonts';
 @import 'libs';
 
+a, a:hover{
+	text-decoration: none;
+	color: $gray;
+	.label{
+		color: #fff;
+	}
+}
+
 ::placeholder{
 	color: #666;
 }
@@ -24,12 +32,62 @@ input, textarea{
 body{
 	font-size: 16px;
 	min-width: 320px;
+	min-height: 100vw;
 	position: relative;
 	line-height: 1.75;
 	opacity: 1;
 	font-family: $default-font, sans-serif;
 	overflow-x: hidden;
 	color: $text-color;
+	.site-header{
+		min-height: 700px;
+		background-repeat: no-repeat;
+		.top-line{
+			padding-top : 20px;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+			.logo{
+				margin-left: 45px;
+				width: 125px;
+				height: auto;
+			}
+			.phone{
+				position: absolute;
+				top: 32px;
+				right: 85px;
+				&-label{
+					margin-left: 3px;
+					color: #fff;
+					font-family: 'w-firasans';
+					font-style: 22px;
+					white-space: nowrap;
+				}
+			}
+			.menu{
+				position: absolute;
+				right: 8px;
+				.hamburger-inner{
+					&, &::after, &::before{
+						height: 2px;
+						width: 34px;
+						background-color: #fff;
+						border-radius: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+section,header{
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+}
+
+section{
+	background-color: #fff;
 }
 
 // Custom Sass / Remove before use

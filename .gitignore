@@ -2,3 +2,5 @@
 /.git/
 /**/Thumbs.db
 /**/*.DS_Store
+/app/libs
+/app/webfonts
