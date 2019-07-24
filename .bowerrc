@@ -1,0 +1,5 @@
+{
+    "directory": "app/libs",
+    "allow_root": true,
+    "save": true
+}

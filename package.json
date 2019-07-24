@@ -24,6 +24,8 @@
 		"gulp-uglify-es": "^1.0.4"
 	},
 	"dependencies": {
+		"bower": "^1.8.8",
+		"normalize.css": "^8.0.1",
 		"sharp": "^0.22.1"
 	}
 }
