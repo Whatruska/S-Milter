@@ -4,123 +4,148 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px){
-	.welcome{
-		h1{
-			font-size: 60px;
-		}
+	.header-row-bottom{
+		font-size: 15px;
 	}
-	.s-call{
-		background-size: cover;
-	}
-	.s{
-		&-king, &-review, &-partners{
-			padding: 10% 0;
-		}
-	}
+}
 
-	.logo-footer{
-		width: 180px;
+@media only screen and (max-width : 1150px){
+	.header-row-bottom{
+		font-size: 15px;
 	}
-
-	.social-footer{
-		margin-top: 0;	
+	.header-container:nth-child(2){
+		padding-top: 130px;
 	}
 }
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
-	.welcome h1{
-		font-size: 48px;
-	}
-
-	.s-call{
-		&::before{
-			width: 100%;
+	.header{
+		&-heading{
+			font-size: 60px;
 		}
-		.callback{
-			padding: 12% 0;
+		&-info{
+			margin-left: 20px;
+		}
+		&-row-bottom{
+			font-size: 14px;
+		}
+		&-container:nth-child(2){
+			padding-top: 140px;
+		}
+		&-welcome{
+			&::after{
+				width: 15%;
+			}
+			&::before{
+				width: 15%;
+			}
+		}
+	}
+}
+@media only screen and (max-width : 830px){
+	.header{
+		&-heading{
+			font-size: 55px;
+		}
+		&-info{
+			margin-left: 20px;
+		}
+		&-row-bottom{
+			font-size: 12px;
+		}
+		&-welcome{
+			&::after{
+				width: 10%;
+			}
+			&::before{
+				width: 10%;
+			}
+		}
+		&-container:nth-child(2){
+			padding-top: 180px;
 		}
 	}
 }
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px){
-	.header-contacts>.container>.row>div:nth-child(2){
-		text-align: left;
-	}
-	
-	.carousel-services-item{
-		flex-direction: column;
-	}
-
-	.welcome h1{
-		font-size: 45px;
-	}
-
-	.quotes{
-		&::before, &::after{
-			display: none;
+@media only screen and (max-width : 768px){	
+	.header{
+		&-heading{
+			font-size: 50px;
 		}
-	}
-
-	.partners.owl-carousel{
-		.owl-nav> div{
-			&.owl-next{
-				right: 0;
-			}
-			&.owl-prev{
-				left: 0;
-			}
+		&-info{
+			margin-left: 20px;
 		}
-	}
-
-	.s-partners h2{
-		margin: 0;
-	}
-
-	.footer-column{
-		margin: 30px 0;
+		&-row-bottom{
+			font-size: 10px;
+		}
 	}
 }
 
+@media only screen and (max-width : 737px){
+	.header{
+		&-welcome{
+			font-size: 10px;
+			&::after, &::before{
+				width: 10%;
+			}
+		}
+		&-heading{
+			font-size: 35px;
+		}
+		&-row-bottom{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.heading-bottom{
+		white-space: nowrap;
+		&:nth-child(3){
+			white-space: nowrap;
+			width: 100%;
+		}
+		&:nth-child(4){
+			visibility: hidden;
+		}
+	}
+}
+
+@media only screen and (max-width : 574px){
+	.header{
+		&-info{
+			margin: 20px 80px 0px 20px;
+		}
+	}
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-	.welcome{
-		margin-top: 30px;
-		h1{
-			font-size: 28px;
-			margin-top: 5px;
+	.site-header{
+		background-image: none;
+		background-color: $gray;
+	}
+	.header{
+		&-heading{
+			font-size: 25px;
 		}
-		span{
-			font-size: 10.3px;
+		&-welcome{
+			font-size: 8px;
 		}
-		p{
-			span{
-				margin: 0 5px;
-			}
+		&-location{
+			font-size: 12px;
 		}
-		strong{
-			margin-top: 15px;
+		&-description{
+			font-size: 12px;
+		}
+		&-container:nth-child(2){
+			padding-top: 250px;
 		}
 	}
-	.carousel-service-composition h3{
-		font-size: 25px;
-	}
-
-	.top{
-		bottom: 20px;
-		&.active{
-			right: 20px;
-		}
-	}
-
-	.type-header{
-		h1, h2{
-			font-size: 26px;
-		}
+	.phone{
+		visibility: hidden;
 	}
 }
 

@@ -221,7 +221,7 @@ body{
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 80px;
+	width: 75px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -298,3 +298,5 @@ section{
 .parent{
 	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3fyH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
 } // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+
+@import'media';
