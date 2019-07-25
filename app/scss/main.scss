@@ -229,6 +229,24 @@ body{
 	align-items: center;
 	border-left: solid 1px $gray;
 }
+.owl-carousel{
+	position: relative;
+}
+.owl-nav{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	background-color: #fff;
+    color: inherit;
+    border: none;
+    padding: 10px 10px !important; 
+    font: inherit;
+}
 
 .soc-icon{
 	position: relative;
