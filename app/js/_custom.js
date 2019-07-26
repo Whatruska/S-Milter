@@ -39,4 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		}
 	});
+	$('.owl-nav').removeClass('disabled');
+	$('.owl-nav').on('click', function(){
+		$('.owl-nav').removeClass('disabled');
+	});
+	$('owl-carousel-services-item-content').equalize();
 });

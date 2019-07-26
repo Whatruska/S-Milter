@@ -44,8 +44,9 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
 		'app/libs/mmenu/dist/mmenu.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
+		'app/libs/equalize/js/equalize.min.js',
 		'app/js/_lazy.js', // JS library plug-in example
-		'app/js/_custom.js', // Custom scripts. Always at the end
+		'app/js/_custom.js' // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Minify js (opt.)
