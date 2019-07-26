@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			animation: "blur 2.0s"
 		});
 		$('.notify').css({
-			animation: "showNotify 1.5s"
+			animation: "showNotify 1.5s",
+			"z-index" : 3
 		});
 		setTimeout(function(){
 			$('.notify').css({
