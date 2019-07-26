@@ -1,9 +1,10 @@
 @import 'vars';
 @import 'fonts';
 @import 'libs';
-@import'header';
-@import'carousel';
-@import'gallery';
+@import 'header';
+@import 'carousel';
+@import 'gallery';
+@import 'callback';
 
 a, a:hover{
 	text-decoration: none;
@@ -17,8 +18,8 @@ ul{
 	list-style: none;
 }
 
-::placeholder{
-	color: #666;
+::placeholder, .custom-select{
+	color: white;
 }
 
 ::selection{
@@ -52,7 +53,6 @@ body{
 	position: relative;
 	background-color: $gray;
 	margin-bottom: 20px;
-	//border-radius: 50%;
 	padding: 5px 10px;
 	border-radius: 50%;
 	i{

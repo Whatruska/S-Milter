@@ -44,5 +44,23 @@ document.addEventListener("DOMContentLoaded", function() {
 		$('.owl-nav').removeClass('disabled');
 	});
 	$('owl-carousel-services-item-content').equalize();
-	
+	$('.btn-callback').on('click', function(e){
+		e.preventDefault();
+		$('.callback-form').css({
+			animation: "blur 2.0s"
+		});
+		$('.notify').css({
+			animation: "showNotify 1.5s"
+		});
+		setTimeout(function(){
+			$('.notify').css({
+				opacity: 1
+			});
+		},1500);
+		setTimeout(function(){
+			$('.callback-form').css({
+				filter: "blur(10px)"
+			});
+		},500);
+	});
 });

@@ -1,0 +1,106 @@
+.callback{
+    .btn-callback{
+        text-align: center;
+        text-transform: uppercase;
+        color: $dark;
+        margin-top: 20px;
+        font-weight: 300;
+        background-color: #fff;
+        border: none;
+        border-radius: 3px;
+        letter-spacing: 3px;
+        @extend %shadow;
+        outline: none;
+    }
+    background-image: url('../img/madama.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 900px;
+    min-height: 450px;
+    &-wrapper{
+        height: 100%;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background: $accent-alpha;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+    &-form{
+        // filter: blur(0px);
+        // transition: all 0,5s ease-in-out;
+        margin: 20px 10px;
+        color: white;
+        position: absolute;
+        z-index: 2;
+    }
+    &-logo img{
+        width: 100px;
+    }
+}
+.container-callback{
+    height: 100%;
+    position: relative;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    select{
+        color: #fff;
+        border-image: round;
+        -webkit-appearance: none;
+        background: none;
+        border: none;
+        outline: none;
+        width: 90%;
+    }
+    input, .selector{
+        color: #fff;
+        border: 1px solid white;
+        padding: 5px 5px;
+        margin-top: 10px;
+        background-color: $accent-transp;
+        border-radius: 3px;
+    }
+}
+.form{
+    &-heading{
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &-desc{
+        white-space: nowrap;
+    }
+}
+.notify{
+    h1{
+        text-transform: uppercase;
+    }
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+    opacity: 0;
+    top: 7em;
+}
+@keyframes showNotify{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes blur{
+    0%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(10px);
+    }
+}

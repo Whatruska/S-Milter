@@ -1,12 +1,17 @@
 // User variables:
 $default-font:'w-raleway';
 $accent: #f9c766;
+$accent-alpha : rgba($color: $accent, $alpha: 0.8);
+$accent-transp : rgba($color: $accent, $alpha: 0);
 $blue : #66c7cd;
 $red : #f86868;
 $text-color: #333;
 $dark : #151515;
 $gray : #505050;
 $icon-color: #2c2c2c;
+%shadow{
+    box-shadow: 0px 3px 0px rgba($color: $gray, $alpha: 0.5);
+}
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
