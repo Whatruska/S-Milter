@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 	$('.mm-listitem_selected i').removeClass('far').addClass('fas');
 	// Custom JS
-	$('.owl-carousel').owlCarousel({
+	$('.owl-carousel-services').owlCarousel({
 		loop : true,
 		nav : true,
 		smartSpeed : 700,
@@ -39,11 +39,18 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		}
 	});
+	$('.owl-carousel-review').owlCarousel({
+		loop: true,
+		smartSpeed: 700,
+		nav: true,
+		items : 1
+	});
 	$('.owl-nav').removeClass('disabled');
 	$('.owl-nav').on('click', function(){
 		$('.owl-nav').removeClass('disabled');
 	});
 	$('owl-carousel-services-item-content').equalize();
+
 	$('.btn-callback').on('click', function(e){
 		e.preventDefault();
 		$('.callback-form').css({
@@ -63,5 +70,14 @@ document.addEventListener("DOMContentLoaded", function() {
 				filter: "blur(10px)"
 			});
 		},500);
+	});
+
+	var marks = $('.fotorama-review-item-mark');
+	marks.each(function(i){
+		var starCount = parseInt(marks[i].innerHTML);
+		marks[i].innerHTML = '';
+		for(var ind = 0; ind < starCount; ind++){
+			$('<i class="fas fa-star fotorama-review-item-mark-star"/>').appendTo(marks[i]);
+		}
 	});
 });

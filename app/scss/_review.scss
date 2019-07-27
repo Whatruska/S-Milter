@@ -1,0 +1,52 @@
+.review{
+    .container-review{
+        z-index: 2;
+        position: relative;
+        margin: auto;
+        min-height: 500px;
+        &-wrapper{
+            background-image: url('../img/bg-2.jpg');
+            background-size: 100%;
+            min-height: 500px;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                background-color: rgba($color: $dark, $alpha: 0.8);
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .quote,.review-content{
+           min-height: 500px;
+        }
+        .quote{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: $accent;
+            }
+        }
+        display: flex;
+        flex-direction: row;
+    }
+    .fotorama-review{
+        display: flex;
+        justify-content: center;
+        .fotorama__wrap{
+            margin: 0px 0px;
+        }
+        &-item{
+            color: white;
+            text-align: center;
+        }
+    }
+    .review-content-heading{
+        color: white;
+        text-align: center;
+    }
+}
