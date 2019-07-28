@@ -7,6 +7,8 @@
 		position: relative;
 		&-services-item{
 			display: flex;
+			justify-content: center;
+			align-items: center;
 			flex-direction: column;
 			opacity: 0.8;
 			&:hover{
@@ -22,22 +24,24 @@
 				background-color: $accent;
 			}
 			&-content{
-				min-height: 294px;
 				color: white;
 				height: 50%;
 				margin: auto;
 				margin-top: 20px;
 				margin-bottom: 20px;
 			}
-			.service-name{
-				text-transform: uppercase;
-				font-size: 24px;
-				font-weight: bold;
-			}
 			.service{
 				text-transform: uppercase;
 				font-weight: light;
 				margin-bottom: 20px;
+				&-name{
+					text-transform: uppercase;
+					font-size: 24px;
+					font-weight: bold;
+				}
+				&-equal{
+					height: 50%;
+				}
 			}
 			.logo{
 				width: 100px;

@@ -23,6 +23,7 @@
     "owl.carousel": "^2.3.4",
     "selectize": "^0.12.6",
     "Font-Awesome": "fontawesome#^5.9.0",
-    "equalize": "^1.0.2"
+    "equalize": "^1.0.2",
+    "matchHeight": "jquery-match-height#^0.7.2"
   }
 }

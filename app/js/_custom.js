@@ -45,11 +45,30 @@ document.addEventListener("DOMContentLoaded", function() {
 		nav: true,
 		items : 1
 	});
+	$('.owl-carousel-partners').owlCarousel({
+		loop: true,
+		smartSpeed: 700,
+		nav: false,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			500:{
+				items: 2
+			},
+			800: {
+				items: 3
+			},
+			1100: {
+				items: 4
+			}
+		}
+	});
 	$('.owl-nav').removeClass('disabled');
 	$('.owl-nav').on('click', function(){
 		$('.owl-nav').removeClass('disabled');
 	});
-	$('owl-carousel-services-item-content').equalize();
 
 	$('.btn-callback').on('click', function(e){
 		e.preventDefault();

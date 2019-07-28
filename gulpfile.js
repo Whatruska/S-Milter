@@ -46,6 +46,7 @@ gulp.task('scripts', function() {
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'app/libs/fotorama/fotorama.js',
 		'app/libs/equalize/js/equalize.min.js',
+		'app/libs/matchHeight/dist/jquery.matchHeight-min.js',
 		'app/js/_lazy.js', // JS library plug-in example
 		'app/js/_custom.js' // Custom scripts. Always at the end
 		])

@@ -1,0 +1,42 @@
+.partners{
+    .owl-nav{
+        display: none;
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/bg-3.jpg');
+    min-height: 300px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: white, $alpha: 0.8);
+        z-index: 1;
+    }
+    .partner-wrapper{
+        z-index: 5;
+    }
+    .owl-carousel-partners{
+        &-item{
+            background-repeat: no-repeat;
+            min-height: 70px;
+            width: 200px;
+            &-1{
+                background-image: url('../img/partners/brend1.png');
+            }
+            &-2{
+                background-image: url('../img/partners/brend2.png');
+            }
+            &-3{
+                background-image: url('../img/partners/brend3.png');
+            }
+            &-4{
+                background-image: url('../img/partners/brend4.png');
+            }
+        }
+    }
+}

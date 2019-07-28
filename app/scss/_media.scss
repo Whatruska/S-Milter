@@ -89,6 +89,9 @@
 }
 
 @media only screen and (max-width : 737px){
+	.review .fotorama-review-item-desc {
+		font-size: 12px;
+	}
 	.header{
 		&-welcome{
 			font-size: 10px;
@@ -121,6 +124,9 @@
 }
 
 @media only screen and (max-width : 574px){
+	.review .fotorama-review-item-desc {
+		font-size: 10px;
+	}
 	.header{
 		&-info{
 			margin: 20px 80px 0px 20px;
@@ -130,6 +136,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
+	.review .fotorama-review-item-desc {
+		font-size: 7px;
+	}
 	.site-header{
 		background-image: none;
 		background-color: $gray;

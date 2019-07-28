@@ -25,6 +25,7 @@
 	},
 	"dependencies": {
 		"bower": "^1.8.8",
+		"jquery-equal-height": "^1.0.4",
 		"normalize.css": "^8.0.1",
 		"sharp": "^0.22.1"
 	}
