@@ -76,8 +76,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	marks.each(function(i){
 		var starCount = parseInt(marks[i].innerHTML);
 		marks[i].innerHTML = '';
-		for(var ind = 0; ind < starCount; ind++){
-			$('<i class="fas fa-star fotorama-review-item-mark-star"/>').appendTo(marks[i]);
+		for(var ind = 0; ind < 5; ind++){
+			if(ind < starCount){
+				$('<i class="fas fa-star fotorama-review-item-mark-star fotorama-review-item-mark-star-active"/>').appendTo(marks[i]);
+			}
+			else{
+				$('<i class="fas fa-star fotorama-review-item-mark-star"/>').appendTo(marks[i]);
+			}
 		}
 	});
 });

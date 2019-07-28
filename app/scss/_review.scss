@@ -1,5 +1,17 @@
 .review{
+    &-content{
+        margin-top: 120px;
+        &-heading{
+            text-transform: uppercase;
+            span{
+                color: $accent;
+            }
+        }
+    }
     .container-review{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         z-index: 2;
         position: relative;
         margin: auto;
@@ -37,16 +49,62 @@
     .fotorama-review{
         display: flex;
         justify-content: center;
-        .fotorama__wrap{
-            margin: 0px 0px;
+        .fotorama{
+            &__wrap{
+                margin: 0px 0px;
+            }
+            &__stage{
+                &::before,&::after{
+                    display: none;
+                }
+            }  
+            &__nav__frame--dot{
+               .fotorama__dot{
+                   background-color: white;
+               }
+               &.fotorama__active{
+                   .fotorama__dot{
+                       background-color: $accent;
+                   }
+               }
+            }
         }
         &-item{
             color: white;
             text-align: center;
+            &-name{
+                font-family: "Times New Roman";
+                font-size: 30px;
+                font-style: italic;
+                font-weight: bold;
+            }
+            &-service{
+                font-family: "Times New Roman";
+                font-size: 14px;
+                color: $gray;
+                font-style: italic;
+            }
+            &-mark-star{
+                &-active{
+                    color: $accent;
+                }
+            }
         }
     }
     .review-content-heading{
         color: white;
         text-align: center;
     }
+}
+
+.fotorama__nav__frame .fotorama__dot {
+    width: 7px;
+    height: 7px;
+    border: none;
+}
+
+.fotorama__nav__frame.fotorama__active .fotorama__dot {
+    width: 10px;
+    height: 10px;
+    border: none;   
 }
