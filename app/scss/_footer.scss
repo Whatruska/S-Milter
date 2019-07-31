@@ -3,16 +3,26 @@
         white-space: nowrap;
     }
     .soc-icons{
-        margin-top: 50%;
         .soc-icon{
+            padding: 5px 8px !important;
+            &:first-child{
+                padding: 5px 10px !important;
+            }
             margin: 0px 5px;
             i{
                 color: #b9b9b9;
             }
         }
     }
+    .first-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .footer-links{
+        height: 100%;
         &-item a{
+            margin-top: 7px;
             display: flex;
             align-items: center;
             white-space: nowrap;
@@ -43,12 +53,6 @@
     }
     .logo img{
         width: 100px;
-    }
-    .soc-icon{
-        padding: 5px 8px !important;
-        &:first-child{
-            padding: 5px 10px !important;
-        }
     }
     &-tip{
         display: flex;
