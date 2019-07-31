@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+	function drag() {
+		$('.owl-nav').removeClass('disabled');
+	}
 	$('#my-menu').mmenu({
 		extensions:[
 			'widescreen',
@@ -27,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		smartSpeed : 700,
 		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 		responsiveClass : true,
+		onDragged: drag,
 		responsive : {
 			0: {
 				items : 1
@@ -39,16 +43,15 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		}
 	});
-	$('.owl-carousel-review').owlCarousel({
-		loop: true,
-		smartSpeed: 700,
-		nav: true,
-		items : 1
-	});
 	$('.owl-carousel-partners').owlCarousel({
 		loop: true,
 		smartSpeed: 700,
-		nav: false,
+		nav: true,
+		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+		autowidth: true,
+		margin : 15,
+		lazyLoad: true,
+		onDragged: drag,
 		responsiveClass: true,
 		responsive: {
 			0: {
