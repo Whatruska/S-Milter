@@ -6,20 +6,6 @@
         justify-content: center;
         align-items: center;
     }
-    .owl-nav{
-        width: calc(100% + 80px);
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        right: -55px;
-        top: 25%;
-        button{
-            &:active,&:focus{
-                outline: none;
-                border: none;
-            }
-        }
-    }
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../img/bg-3.jpg');
@@ -51,23 +37,39 @@
             margin-bottom: 35px;
         }
     }
-    .owl-item{
-        margin: 0px 30px;
-        top: 0;
-    }
-    .owl-stage{
-        display: flex;
-        align-items: center;
-    }
-    .owl-carousel-partners{
+    .owl{
         &-item{
+            margin: 0px 30px;
+            top: 0;
+        }
+        &-stage{
             display: flex;
-            justify-content: center;
             align-items: center;
-            // min-height: 110px;
-            img{
-                min-width: 150px;
-                background-repeat: no-repeat;
+        }
+        &-carousel-partners{
+            &-item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // min-height: 110px;
+                img{
+                    min-width: 150px;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &-nav{
+            width: calc(100% + 80px);
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            right: -55px;
+            top: 25%;
+            button{
+                &:active,&:focus{
+                    outline: none;
+                    border: none;
+                }
             }
         }
     }

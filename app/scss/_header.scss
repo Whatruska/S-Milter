@@ -1,84 +1,8 @@
 @import 'vars';
-.mm-opened{
-	overflow-y: scroll;
-}
-.heading-bottom:nth-child(3){
-	white-space: normal;
-}
-.site-header{
+@import 'header-menu';
+.header{
     min-height: 700px;
     background-repeat: no-repeat;
-    .top-line{
-        padding-top : 20px;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-        .logo{
-            margin-left: 45px;
-            width: 125px;
-            height: auto;
-        }
-        .phone{
-            position: absolute;
-            top: 32px;
-            right: 85px;
-            i {
-                color: $gray;
-            }
-            &-label{
-                margin-left: 3px;
-                font-family: 'w-firasans';
-                font-style: 22px;
-                white-space: nowrap;
-            }
-        }
-        .menu{
-            position: absolute;
-            right: 8px;
-            .hamburger-inner{
-                &, &::after, &::before{
-                    height: 2px;
-                    width: 34px;
-                    background-color: #fff;
-                    border-radius: 0;
-                }
-            }
-        }
-    }
-}
-.mm-navbar__title{
-    display: flex;
-    justify-content: center;
-    margin-top : 10px;
-    margin-bottom : 10px;
-    img{
-        width: 125px;
-        height: auto;
-    }
-}
-.mm-menu_theme-black{
-    --mm-color-background-emphasis: rgba( 0,0,0, 0.15 );
-}
-.mm-listitem{
-    transition: 0.5s all ease;
-    text-transform: uppercase;
-    &__text{
-        i{
-            margin-right: 7px;
-        }
-    }
-    &:hover{
-        color: $accent;
-    }
-    &_selected{
-        background-color: black;
-        color: $accent;
-    }
-    &::after{
-        visibility: hidden;
-    }
-}
-.header{
     &-welcome, &-heading, &-location, .btn-heading{
         display: flex;
         justify-content: center;
@@ -156,32 +80,70 @@
             color: $gray;
         }
     }
-}
-
-.btn-heading{
-    margin: auto;
-    display: flex;
-    font-size: 13px;
-    font-weight: semibold;
-    text-justify: auto;
-    text-transform: uppercase;
-    background-color: $accent;
-    letter-spacing : 3px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 15px 40px;
-}
-
-.header-sidebar{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 75px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: solid 1px $gray;
+    &-sidebar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: solid 1px $gray;
+    }
+    &-bottom:nth-child(3){
+        white-space: nowrap;
+    }
+    .top-line{
+        padding-top : 20px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        .logo{
+            margin-left: 45px;
+            width: 125px;
+            height: auto;
+        }
+        .phone{
+            position: absolute;
+            top: 32px;
+            right: 85px;
+            i {
+                color: $gray;
+            }
+            &-label{
+                margin-left: 3px;
+                font-family: 'w-firasans';
+                font-style: 22px;
+                white-space: nowrap;
+            }
+        }
+        .menu{
+            position: absolute;
+            right: 8px;
+            .hamburger-inner{
+                &, &::after, &::before{
+                    height: 2px;
+                    width: 34px;
+                    background-color: #fff;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .btn-heading{
+        margin: auto;
+        display: flex;
+        font-size: 13px;
+        font-weight: semibold;
+        text-justify: auto;
+        text-transform: uppercase;
+        background-color: $accent;
+        letter-spacing : 3px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 15px 40px;
+    }
 }

@@ -41,52 +41,50 @@
     &-logo img{
         width: 100px;
     }
-}
-.container-callback{
+    .container-callback{
     height: 100%;
     position: relative;
 }
-form{
-    margin-right: 40px;
-    display: flex;
-    flex-direction: column;
-    select{
+    &-form{
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        select{
+            color: #fff;
+            border-image: round;
+            -webkit-appearance: none;
+            background: none;
+            border: none;
+            outline: none;
+            width: 90%;
+        }
+        input, .selector{
+            color: #fff;
+            border: 1px solid white;
+            padding: 5px 5px;
+            margin-top: 10px;
+            background-color: $accent-transp;
+            border-radius: 3px;
+        }
+        &-heading{
+            font-size: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        &-desc{
+            white-space: nowrap;
+        }
+    }
+    .notify{
+        h1{
+            text-transform: uppercase;
+        }
+        position: absolute;
         color: #fff;
-        border-image: round;
-        -webkit-appearance: none;
-        background: none;
-        border: none;
-        outline: none;
-        width: 90%;
+        z-index: 0;
+        opacity: 0;
+        top: 7em;
     }
-    input, .selector{
-        color: #fff;
-        border: 1px solid white;
-        padding: 5px 5px;
-        margin-top: 10px;
-        background-color: $accent-transp;
-        border-radius: 3px;
-    }
-}
-.form{
-    &-heading{
-        font-size: 30px;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
-    &-desc{
-        white-space: nowrap;
-    }
-}
-.notify{
-    h1{
-        text-transform: uppercase;
-    }
-    position: absolute;
-    color: #fff;
-    z-index: 0;
-    opacity: 0;
-    top: 7em;
 }
 @keyframes showNotify{
     0%{
