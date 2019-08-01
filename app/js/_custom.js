@@ -72,7 +72,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	$('.owl-nav').on('click', function(){
 		$('.owl-nav').removeClass('disabled');
 	});
-
+	$('.service-equal').matchHeight({
+		property: 'height'
+	});
 	$('.btn-callback').on('click', function(e){
 		e.preventDefault();
 		$('.callback-form').css({
